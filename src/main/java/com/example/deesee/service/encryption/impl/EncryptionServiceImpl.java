@@ -15,6 +15,7 @@ public class EncryptionServiceImpl implements EncryptionService {
         for (int i = 0; i < word.length(); i++) {
             char c = word.toLowerCase().charAt(i);
 
+            // Ignore whitespace, shift character
             if (Character.isWhitespace(c)) {
                 charArray[i] = c;
             } else {
