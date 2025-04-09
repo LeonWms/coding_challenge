@@ -2,12 +2,12 @@ package com.example.deesee.domain;
 
 import java.util.Objects;
 
-public class Identity{
+public class Identity {
 
     private String firstName;
     private String lastName;
 
-    public Identity(){
+    public Identity() {
 
     }
 

@@ -22,7 +22,8 @@ public class DataLoader {
     CommandLineRunner loadSuperheroData(SuperheroRepository repository) {
         return args -> {
             ObjectMapper mapper = new ObjectMapper();
-            TypeReference<List<SuperheroDTO>> typeReference = new TypeReference<>() {};
+            TypeReference<List<SuperheroDTO>> typeReference = new TypeReference<>() {
+            };
             InputStream inputStream = new ClassPathResource("superheroes.json").getInputStream();
 
             try {

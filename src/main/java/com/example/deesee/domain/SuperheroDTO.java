@@ -10,7 +10,7 @@ public class SuperheroDTO {
     private String birthday;
     private List<String> superpowers;
 
-    public SuperheroDTO(){
+    public SuperheroDTO() {
 
     }
 

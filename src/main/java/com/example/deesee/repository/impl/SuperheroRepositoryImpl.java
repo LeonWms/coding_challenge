@@ -34,7 +34,7 @@ public class SuperheroRepositoryImpl implements SuperheroRepository {
     @Override
     public List<Superhero> findBySuperpowers(List<Superpower> superpowers) {
         return getAll().stream().
-                filter(hero ->hero.getSuperpowers().containsAll(superpowers))
+                filter(hero -> hero.getSuperpowers().containsAll(superpowers))
                 .collect(Collectors.toList());
     }
 }

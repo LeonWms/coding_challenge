@@ -57,10 +57,10 @@ public class SuperheroServiceImpl implements SuperheroService {
         superheroRepository.save(superhero);
     }
 
-    private List<Superhero> encryptAll(List<Superhero> superheroes, int key){
+    private List<Superhero> encryptAll(List<Superhero> superheroes, int key) {
         List<Superhero> encryptedIdentities = new ArrayList<>();
 
-        for (Superhero s : superheroes){
+        for (Superhero s : superheroes) {
             Identity originalIdentity = s.getIdentity();
             String encryptedFirstName = encryptionService.encrypt(originalIdentity.getFirstName(), key);
             String encryptedLastName = encryptionService.encrypt(originalIdentity.getLastName(), key);

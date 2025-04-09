@@ -59,8 +59,8 @@ public class SuperheroController {
     @PostMapping("/batch")
     public ResponseEntity<List<Map<String, Object>>> createSuperheroes(@RequestBody List<SuperheroDTO> superheroesDTO) {
         List<Superhero> superheroes = superheroesDTO.stream()
-                        .map(SuperheroDTO:: toSuperhero)
-                        .collect(Collectors.toList());
+                .map(SuperheroDTO::toSuperhero)
+                .collect(Collectors.toList());
         superheroService.saveSuperheroes(superheroes);
         return ResponseEntity.status(HttpStatus.CREATED).body(mapSuperheroesToResponse(superheroes));
     }
@@ -80,7 +80,7 @@ public class SuperheroController {
         return response;
     }
 
-    private List<Superpower> stringToEnum(List<String> stringSuperpowers){
+    private List<Superpower> stringToEnum(List<String> stringSuperpowers) {
         return stringSuperpowers.stream()
                 .map(String::toUpperCase)
                 .map(s -> {
