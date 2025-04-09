@@ -10,6 +10,8 @@ public class EncryptionServiceImpl implements EncryptionService {
     @Override
     public String encrypt(String word, int key) {
         char[] charArray = new char[word.length()];
+
+        // Loop through each character of the word
         for (int i = 0; i < word.length(); i++) {
             char c = word.toLowerCase().charAt(i);
 
@@ -31,6 +33,8 @@ public class EncryptionServiceImpl implements EncryptionService {
         int steps = Math.abs(key);
 
         if(c < 'a' || c > 'z') return c;
+
+        // Loop character through the alphabet n-steps
         for (int i = 0; i < steps; i++) {
             if (isNegative) {
                 c--;
