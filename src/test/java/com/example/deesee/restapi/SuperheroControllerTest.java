@@ -1,12 +1,11 @@
 package com.example.deesee.restapi;
 
-import com.example.deesee.domain.Identity;
+
 import com.example.deesee.domain.Superhero;
 import com.example.deesee.domain.SuperheroDTO;
 import com.example.deesee.domain.Superpower;
 import com.example.deesee.service.SuperheroService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Captor;
@@ -20,15 +19,12 @@ import org.springframework.test.web.servlet.MockMvc;
 import static com.example.deesee.restapi.util.*;
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.ArgumentMatchers.anyInt;
-import static org.mockito.ArgumentMatchers.anyList;
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import java.time.LocalDate;
-import java.util.Arrays;
+
 import java.util.List;
 
 import static org.mockito.Mockito.when;
