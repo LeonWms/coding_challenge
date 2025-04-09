@@ -27,13 +27,25 @@
    ```
 Application loads superhero data from `src/main/resources/superheroes.json` on startup
 
+**Using Docker**
+1. Build the image
+      ```sh
+   docker build -t deesee .
+   ```
+2. Run the container
+      ```sh
+   docker run -p 8080:8080 deesee
+   ```
+
+
+
 ### API Endpoints
 - `GET /api/superheroes` - Get all superheroes
-**Additional optional parameter*:*
+<br>**Query Parameters:**<br>
 - `GET /api/superheroes?superpowers=flight,strength` - Filter superheroes by powers
 - `GET /api/superheroes?encrypted=true` - Get superheroes with encrypted identities
-- `GET /api/superheroes?superpowers=flight,strength,encrypted=true` - Get superheroes by power with encrypted identities
-- 
+- `GET /api/superheroes?superpowers=flight,strength&encrypted=true` - Get superheroes by power with encrypted identities
+<br><br>
 - `POST /api/superheroes` - Create a new superhero
 - `POST /api/superheroes/batch` - Create multiple superheroes
 
