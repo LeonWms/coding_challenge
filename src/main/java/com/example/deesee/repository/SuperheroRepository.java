@@ -7,8 +7,8 @@ import java.util.List;
 
 public interface SuperheroRepository {
 
-    public List<Superhero> getAll();
-    public void saveAll(List<Superhero>superheroes);
-    public void save(Superhero superhero);
-    public List<Superhero> findBySuperpowers(List<Superpower> superpowers);
+    List<Superhero> getAll();
+    void saveAll(List<Superhero>superheroes);
+    void save(Superhero superhero);
+    List<Superhero> findBySuperpowers(List<Superpower> superpowers);
 }

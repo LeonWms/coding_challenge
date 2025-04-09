@@ -48,6 +48,7 @@ public class SuperheroController {
         return ResponseEntity.ok(mapSuperheroesToResponse(superheroes));
     }
 
+
     @PostMapping
     public ResponseEntity<Map<String, Object>> createSuperhero(@RequestBody SuperheroDTO superheroDTO) {
         Superhero superhero = superheroDTO.toSuperhero();

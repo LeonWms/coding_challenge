@@ -7,10 +7,10 @@ import java.util.List;
 
 public interface SuperheroService {
 
-    public List<Superhero> getAllSuperheroes();
-    public List<Superhero> getAllSuperheroesWithEncryptedIdentities(int key);
-    public List<Superhero> getSuperheroesWithSuperpowers(List<Superpower> superpowers);
-    public List<Superhero> getSuperheroesWithSuperpowersAndEncryptedIdentities(List<Superpower> superpowers, int key);
-    public void saveSuperheroes(List<Superhero> superheroes);
-    public void saveSuperhero(Superhero superhero);
+    List<Superhero> getAllSuperheroes();
+    List<Superhero> getAllSuperheroesWithEncryptedIdentities(int key);
+    List<Superhero> getSuperheroesWithSuperpowers(List<Superpower> superpowers);
+    List<Superhero> getSuperheroesWithSuperpowersAndEncryptedIdentities(List<Superpower> superpowers, int key);
+    void saveSuperheroes(List<Superhero> superheroes);
+    void saveSuperhero(Superhero superhero);
 }
