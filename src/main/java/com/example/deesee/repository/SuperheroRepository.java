@@ -2,7 +2,6 @@ package com.example.deesee.repository;
 
 import com.example.deesee.domain.Superhero;
 import com.example.deesee.domain.Superpower;
-
 import java.util.List;
 
 public interface SuperheroRepository {
