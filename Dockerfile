@@ -13,5 +13,4 @@ COPY --from=build /app/target/*.jar deesee.jar
 
 EXPOSE 8080
 
-
 ENTRYPOINT ["java", "-jar", "deesee.jar"]
