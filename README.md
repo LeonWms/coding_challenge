@@ -1,5 +1,5 @@
 # Deesee Coding-Challenge
-
+The challengen was developed with Java 17 and the Spring framework was used.
 ## Getting started
 
 ### Prerequisites (Recommended)
